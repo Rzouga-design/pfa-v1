@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Dashboard Stats */
+.card .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* Project Cards */
+.project-card {
+    height: 100%;
+}
+
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card .card-text {
+    flex-grow: 1;
+}
+
+/* Forms */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Tables */
+.table-responsive {
+    margin-bottom: 1rem;
+}
+
+/* Alerts */
+.alert {
+    margin-bottom: 1rem;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+    margin-right: 0.5rem;
+}
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+/* Project Status Badges */
+.badge-available {
+    background-color: #28a745;
+    color: white;
+}
+
+.badge-reserved {
+    background-color: #ffc107;
+    color: black;
+}
+
+.badge-completed {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card .display-4 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+        width: 100%;
+    }
+} 
